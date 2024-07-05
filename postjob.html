@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Post Job - VirtueRecruit</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="rstyle.css" />
+    <script src="recruiter.js" defer></script>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: "Poppins", sans-serif;
+        margin-top: 80px;
+      }
+
+      .form-container {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-control {
+        border-radius: 20px;
+        padding: 15px;
+        font-size: 16px;
+        box-shadow: none;
+      }
+
+      .btn-primary {
+        border-radius: 20px;
+        padding: 15px;
+        font-size: 18px;
+        background-color: #6d7a9b;
+        border: none;
+        width: 100%;
+      }
+
+      .btn-primary:hover {
+        background-color: #447fc8;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="recruiter.html">Dashboard</a></li>
+          <li><a href="interivew.html">Interview</a></li>
+          <li><a href="Rprofile.html">My Profile</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li  id="logoutBtn">
+                <a href="index.html"
+                  ><span class="glyphicon glyphicon-log-out"></span> Logout</a
+                >
+              </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="form-container">
+            <h2>Post Job</h2>
+            <form>
+              <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="jobTitle"
+                  placeholder="Enter job title"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="jobDescription">Job Description</label>
+                <textarea
+                  class="form-control"
+                  id="jobDescription"
+                  rows="5"
+                  placeholder="Enter job description"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="jobRequirements">Job Requirements</label>
+                <textarea
+                  class="form-control"
+                  id="jobRequirements"
+                  rows="3"
+                  placeholder="Enter job requirements"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="jobLocation">Job Location</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="jobLocation"
+                  placeholder="Enter job location"
+                  required
+                />
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="salary"
+                      placeholder="Enter salary"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="deadline">Application Deadline</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="deadline"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <a href="totaljobs.html" class="btn btn-primary">Post Job</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

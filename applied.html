@@ -1,0 +1,210 @@
+ <!-- <!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse visible-xs">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">User</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="user.html">Dashboard</a></li>
+                    <li class="active"><a href="user_interview.html">Interviews</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">My profile</a></li>
+                    <li><a href="index.html" class="btn btn-info btn-lg">
+                      <span class="glyphicon glyphicon-log-out"></span> Log out
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav hidden-xs" style=" background-color:#CBDADD;">
+                <h2>User</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="user.html">Dashboard</a></li>
+                    <li class="active"><a href="user_interview.html">Interviews</a></li>
+                    <li><a href="job.html">Jobs</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                    <li><a href="index.html" class="btn btn-info btn-lg">
+                      <span class="glyphicon glyphicon-log-out"></span> Log out
+                    </a></li>
+                </ul>
+                <br />
+            </div>
+            <br />
+
+            <div class="col-sm-9">
+                <div class="wel" style="box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);">
+                    <h3>Hello Welcome user</h3>
+                    <p id="time">Online at 8:30 pm .</p>
+                </div>
+                <div class="row">
+                    <h4 style="padding: 10px;">Applied Jobs</h4>
+                    <ul class=list1>
+                        <li>
+                            <strong>Role:</strong> Front-end Developer
+                            <br>
+                            <strong>Applied on:</strong> 12-24-24
+                            <br>
+                            <strong class="company">Company:</strong> Tatvasoft
+                            <br>
+                            <strong>Assessment Status:</strong> Pending
+                        </li>
+
+                    </ul>
+                    <ul class=list2>
+                        <li>
+                            <strong>Role:</strong> Front-end Developer
+                            <br>
+                            <strong>Applied on:</strong> 22-23-24
+                            <br>
+                            <strong>Company:</strong> Metalib
+                            <br>
+                            <strong>Assessment Status:</strong> Pending
+                        </li>
+                    </ul>
+                    <ul class=list3>
+                        <li>
+                            <strong>Role:</strong> Front-end Full Stack Developer
+                            <br>
+                            <strong>Applied on:</strong> 02/04/24
+                            <br>
+                            <strong>Company:</strong> TCS
+                            <br>
+                            <strong>Assessment Status:</strong> Pending
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Applied Jobs</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .job {
+      /* padding: 5px; */
+      /* margin: 2px; */
+      width: 900px;
+      background-color: #CBDADD;
+      /* border: 1px solid #ddd; */
+      border-radius: 15px;
+      text-align: left;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav" style="background-color:#CBDADD; height:160vh;">
+        <h2>User</h2>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="user.html">Dashboard</a></li>
+          <li><a href="user_interview.html">Interviews</a></li>
+          <li><a href="job.html">Jobs</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+          <li><a href="index.html" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </a></li>
+        </ul>
+        <br />
+      </div>
+      <div class="col-sm-9">
+        
+            <div class="wel" style="box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);">
+                <h3>Hello Welcome user</h3>
+                <p id="time">Online at 8:30 pm .</p>
+            </div>
+            <div class="row">
+          <h3 style="padding-left: 20px;">Applied Jobs</h3></div>
+          <div id="applied-jobs-list" >
+            <!-- Job details will be inserted here -->
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const jobDetails = {
+        'SDE': [
+            { company: 'TatvaSoft', role: 'Software Engineer', appliedOn: '2024-06-10', assessment: 'Pending' },
+            { company: 'MediaTek', role: 'Software Engineer', appliedOn: '2024-06-12', assessment: 'Reviewed' },
+            { company: 'Ridigent', role: 'Software Engineer', appliedOn: '2024-06-14', assessment: 'Passed' }
+        ],
+        'Frontend': [
+            { company: 'InfoLabz', role: 'Frontend Developer', appliedOn: '2024-06-10', assessment: 'Pending' },
+            { company: 'Prodigy', role: 'Frontend Developer', appliedOn: '2024-06-12', assessment: 'Reviewed' },
+            { company: 'MaxGen', role: 'Frontend Developer', appliedOn: '2024-06-14', assessment: 'Passed' }
+        ],
+        'Internship': [
+            { company: 'CodChef', role: 'Web Dev Intern', appliedOn: '2024-06-10', assessment: 'Pending' },
+            { company: 'BharatEp', role: 'Full Stack Intern', appliedOn: '2024-06-12', assessment: 'Reviewed' },
+            { company: 'TechNishal', role: 'MERN Intern', appliedOn: '2024-06-14', assessment: 'Passed' }
+        ]
+    };
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const job = urlParams.get('job');
+      const jobs = jobDetails[job];
+
+      const appliedJobsList = document.getElementById('applied-jobs-list');
+
+      if (jobs) {
+        jobs.forEach(job => {
+          const jobElement = document.createElement('div');
+          jobElement.className = 'job';
+          jobElement.innerHTML = `
+              
+                    <p style="font-size: 18px;">
+                        Role: <b>${job.role}</b> <br>
+                        Company: <b>${job.company}</b> <br>
+                        Applied on: <b>${job.appliedOn}</b> <br>
+                        Assessment: <b>${job.assessment}</b>
+                    </p>
+                `
+            ;
+          appliedJobsList.appendChild(jobElement);
+        });
+      } else {
+        appliedJobsList.innerHTML = '<p>No job details available.</p>';
+      }
+    });
+  </script>
+</body>
+</html>

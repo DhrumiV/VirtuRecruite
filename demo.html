@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+        }
+        .sidenav {
+          background-color: #CBDADD;
+          padding: 2px;
+        }
+        .sidenav h2 {
+          color: #333;
+        }
+        .sidenav .nav-pills > li > a {
+          color: #333;
+        }
+        /* .sidenav .nav-pills > li > a:hover {
+          background-color: #ddd;
+        } */
+        /* .sidenav .nav-pills > li.active > a {
+          background-color: #333;
+          color: white;
+        } */
+        .wel {
+          padding: 20px;
+          background-color: #CBDADD;
+          margin-bottom: 20px;
+          border-radius: 5px;
+        }
+        .jobs {
+          padding: 20px;
+          background-color: #d1e4f4;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .jobs h4 {
+          margin-top: 0;
+        }
+        .btn-primary {
+          background-color: #337ab7;
+          border-color: #2e6da4;
+        }
+        .btn-primary:hover {
+          background-color: #286090;
+          border-color: #204d74;
+        }
+        .contact {
+          padding-left: 20px;
+          font-size: x-large;
+        }
+      </style>
+  <title>Trending Jobs</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse visible-xs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav" style="background-color:#CBDADD; height:160vh;">
+        <h2>User</h2>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="user.html">Dashboard</a></li>
+          <li><a href="user_interview.html">Interviews</a></li>
+          <li><a href="job.html">Jobs</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+          <li><a href="index.html" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </a></li>
+        </ul>
+        <br />
+      </div>
+      <br />
+
+      <div class="col-sm-9">
+        <div class="wel">
+          <h3>Software Engineer</h3>
+          <p><strong>Description:</strong> A Software Engineer is responsible for designing, developing, and maintaining software applications. They collaborate with cross-functional teams to deliver high-quality software solutions.</p>
+          <p><strong>Skills Required:</strong> C, Python, DBMS, PHP</p>
+          <p><strong>Market Demand:</strong> 85%</p>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="jobs">
+              <h4>Company: Tech Innovators</h4>
+              <p><strong>Skills Required:</strong>
+              <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>SQL</li>
+              </ul>
+              <a href="quiz.html" class="btn btn-primary quiz-link" data-job="software_engineer" data-company="Tech Innovators">Apply by Taking Quiz</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="jobs">
+              <h4>Company: Web Solutions</h4>
+              <p><strong>Skills Required:</strong>
+              <ul>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <a href="quiz.html" class="btn btn-primary quiz-link" data-job="software_engineer" data-company="Web Solutions">Apply by Taking Quiz</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="jobs">
+              <h4>Company: Data Analytik </h4>
+              <p><strong>Skills Required:</strong>
+              <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>SQL</li>
+              </ul>
+              <a href="quiz.html" class="btn btn-primary quiz-link" data-job="software_engineer" data-company="Data Analytics Inc.">Apply by Taking Quiz</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h4 class="contact">Contact Recruiter: <a href="mailto:abc@gmail.com">abc@gmail.com</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.quiz-link').forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const jobTitle = this.getAttribute('data-job');
+        const company = this.getAttribute('data-company');
+        localStorage.setItem('jobTitle', jobTitle);
+        localStorage.setItem('company', company);
+        window.location.href = `quiz.html?job=${jobTitle}&company=${company}`; // Pass job title and company as query parameters
+      });
+    });
+  </script>
+</body>
+</html> 

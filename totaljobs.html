@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Postings - VirtueRecruit</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="rstyle.css" />
+    <script src="recruiter.js" defer></script>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .bodystyl {
+        padding-top: 50px;
+        background-color: #fefdfd;
+        border-radius: 10px;
+        /* padding: 10px; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .job {
+        margin-bottom: 20px;
+      }
+
+      .job-details {
+        background-color: #a5bbd2;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      .job-details h3 {
+        color: #262626;
+        margin-top: 0;
+      }
+
+      .job-details p {
+        color: #2a2a2a;
+        margin-bottom: 5px;
+      }
+
+      .btn-primary {
+        border-radius: 25px;
+        padding: 12px 25px;
+        font-size: 16px;
+        background-color: #6d7a9b;
+        border: none;
+        text-transform: uppercase;
+      }
+
+      .btn-primary:hover {
+        background-color: #556175;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="recruiter.html">Dashboard</a></li>
+          <li><a href="interivew.html">Interview</a></li>
+          <li><a href="Rprofile.html">My Profile</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li  id="logoutBtn">
+                <a href="index.html"
+                  ><span class="glyphicon glyphicon-log-out"></span> Logout</a
+                >
+              </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid bodystyl">
+      <h2 style="text-align: center">Total Job Postings</h2>
+      <div class="job">
+        <div class="job-details">
+          <h3>Job Title: Software Developer</h3>
+          <p>Location: New York</p>
+          <p>Salary: $80,000 - $100,000</p>
+          <p>Deadline: 2024-06-30</p>
+          <p>
+            Description: We are looking for a skilled software developer with
+            experience in JavaScript, React, and Node.js. The ideal candidate
+            should have a strong problem-solving ability and experience with
+            full-stack development.
+          </p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-details">
+          <h3>Job Title: Data Analyst</h3>
+          <p>Location: San Francisco</p>
+          <p>Salary: $70,000 - $90,000</p>
+          <p>Deadline: 2024-07-15</p>
+          <p>
+            Description: We are seeking a detail-oriented data analyst with
+            experience in data visualization, statistical analysis, and SQL. The
+            candidate should have a strong analytical mindset and the ability to
+            communicate insights effectively.
+          </p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-details">
+          <h3>Job Title: UX/UI Designer</h3>
+          <p>Location: Seattle</p>
+          <p>Salary: $75,000 - $95,000</p>
+          <p>Deadline: 2024-07-10</p>
+          <p>
+            Description: We are in need of a creative and innovative UX/UI
+            designer with a passion for user-centered design. The ideal
+            candidate should have experience with wireframing, prototyping, and
+            usability testing.
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid bodystyl" id="totalJobsContainer">
+        <!-- Existing job details will be displayed here -->
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

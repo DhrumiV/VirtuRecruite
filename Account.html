@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="Create Account" class="create">
+      <div class="box3">
+        <h1>Create New</h1>
+        <h1>Account</h1>
+        <h4>Already Registered? <a href="login.html">Login</a></h4>
+        <!-- Link to login page -->
+        <form
+          id="createAccountForm"
+          action="login.html"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <label for="email">EMAIL</label>
+          <input
+            id="form"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="hello@reallygreatsite.com"
+          />
+
+          <label for="name">NAME</label>
+          <input
+            id="form"
+            type="text"
+            id="name"
+            name="fullName"
+            placeholder="Jiara Martins"
+          />
+
+          <label for="resume">Resume</label>
+          <input type="file" id="form" name="resume" accept=".pdf" />
+          <label for="cv">CV</label>
+          <input type="file" id="form" name="cv" accept=".pdf" />
+
+          <label for="phone_no">Phone Number</label>
+          <input
+            type="text"
+            id="form"
+            name="phoneNo"
+            placeholder="Enter your phone no."
+          />
+
+          <label for="Education">Education</label>
+          <input
+            type="text"
+            id="form"
+            name="education"
+            placeholder="Enter your education "
+          />
+
+          <label for="Education">Intro</label>
+          <input
+            type="text"
+            id="form"
+            name="intro"
+            placeholder="Enter your education "
+          />
+
+          <label for="profession">Profession</label>
+          <input
+            type="text"
+            id="form"
+            name="profession"
+            placeholder="Enter your profession"
+          />
+
+          <label for="password">PASSWORD</label>
+          <input
+            id="form"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="********"
+          />
+
+          <input
+            id="btn"
+            type="submit"
+            value="submit"
+            href="login.html"
+            style="background-color: #24698b; margin-left: 70px ;width: 50%; margin-bottom: 5px;"
+          />
+          <!-- Link to create account endpoint -->
+        </form>
+      </div>
+      <div class="box4">
+        <img src="virturecruit.png" alt="logo" width="450px" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
